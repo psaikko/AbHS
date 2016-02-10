@@ -1,0 +1,5 @@
+AbHS
+
+A propositional abduction solver based on the implicit hitting set paradigm.
+
+Compile with 'make CPLEXDIR=path' where path is location of the CPLEX installation.
