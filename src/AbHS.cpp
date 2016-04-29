@@ -97,7 +97,13 @@ void AbHS::solve(bool exclude_core, bool verbose) {
 
   for (int iter = 0;;++iter) {
     if (verbose) log(0, "c\nc iteration %d\n", iter);
-    mip_solver->computeHS(S, weight);
+    bool ok = mip_solver->computeHS(S, weight);
+
+    if (!ok) {
+      log(0, "c no hitting set\n");
+      break;
+    }
+
     if (verbose) {
       log(0, "c MCHS:\n");
       logVec(0, S);
