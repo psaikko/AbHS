@@ -49,7 +49,7 @@ void terminate(const int code, const char * fmt, ...) {
   va_start(args, fmt);
   vprintf(fmt, args);
   va_end(args);
-  exit(code);
+  _Exit(code);
 }
 
 void logVec(const int level, std::vector<int> & core) {
@@ -65,5 +65,5 @@ void condTerminate(const bool cond, const int code, const char * fmt, ...) {
   va_start(args, fmt);
   vprintf(fmt, args);
   va_end(args);
-  exit(code);
+  _Exit(code);
 }

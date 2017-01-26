@@ -7,3 +7,5 @@ Compile with 'make CPLEXDIR=path', where path is the location of the CPLEX insta
 Test with './bin/AbHS example.abd [-v] [-e]', where v and e are optional.
 -v enables verbose output
 -e runs 'AbHS+'
+
+AbHS has been tested with g++ version >= 4.8 and CPLEX >= 12.6.3 in a Ubuntu linux environment.

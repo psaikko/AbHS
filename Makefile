@@ -45,7 +45,7 @@ MIP_LNFLAGS		=	-lconcert -lilocplex -lcplex -lm -lpthread
 ABS_CPPFLAGS += $(CCOPT) -I$(CPLEXINCDIR) -I$(CONCERTINCDIR)
 OBJFILES += obj/CPLEXInterface.o
 
-CPP			 =	g++-4.8
+CPP			 =	g++
 EXE = bin/AbHS
 
 .PHONY: all
